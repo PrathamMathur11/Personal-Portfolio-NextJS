@@ -6,7 +6,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'burtons', sans-serif;
+  font-family: "burtons", sans-serif;
 }
 
 a {
@@ -21,4 +21,17 @@ a {
 @font-face {
   font-family: 'burtons';
   src: url(../public/Burtons.otf);
+}
+
+@font-face {
+  font-family: "La Belle Aurore";
+  src: url("../public/assets/fonts/LaBelleAurore.woff2") format("woff2"),
+    url("../public/assets/fonts/LaBelleAurore.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.new-font {
+  font-family: "La Belle Aurore", sans-serif;
+  font-size: xx-large;
 }

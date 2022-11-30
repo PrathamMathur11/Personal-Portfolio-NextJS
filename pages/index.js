@@ -8,7 +8,6 @@ import {
 } from "react-icons/ai";
 import Image from "next/image";
 import PrathamMathurProfilePic from "../public/assets/PrathamMathurProfilePic-removebg-preview.png";
-// import deved from '../public/dev-ed-wave.png'
 import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
@@ -35,7 +34,7 @@ export default function Home() {
       </Head>
 
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
-        <header className="py-10 mb-10 flex justify-between dark:text-white">
+        <header className="py-10 mb-1 flex justify-between dark:text-white">
           <h1 className="text-xl font-burtons">Developed by Pratham Mathur</h1>
           <ul className="flex items-center">
             <li>
@@ -56,6 +55,7 @@ export default function Home() {
         </header>
         {/* Home Section */}
         <section className="min-h-screen">
+          <span className="text-teal-500 new-font">&lt;Info&gt;</span>
           <div className="text-center p-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
               Pratham Mathur
@@ -64,10 +64,12 @@ export default function Home() {
               FrontEnd Developer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-200">
-              I have a good amount of experience and knowledge working with
-              <span className="text-teal-500"> MERN </span>
-              Stack and can rapidly learn new technologies. I'm searching for an
-              opportunity to work with a variety of technologies.
+              I'm a<span className="text-teal-500"> front-end developer </span>
+              with a lot of ambition searching for a position at a reputable IT
+              firm where I can use the newest technologies on interesting and
+              varied projects. I'm naturally interested, quite self-assured, and
+              constantly trying to sharpen my skills by solving one design issue
+              at a time.
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
@@ -112,15 +114,21 @@ export default function Home() {
               alt="pp"
             />
           </div>
+          <span className="text-teal-500 new-font">&lt;/Info&gt;</span>
         </section>
         {/* Skills Section */}
         <section>
+          <span className="text-teal-500 new-font">&lt;Skills&gt;</span>
           <div>
-            <h1 className="text-4xl py-1 dark:text-white">Skills</h1>
+            {/* <h1 className="text-4xl py-1 dark:text-white">Skills</h1> */}
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200">
               Furthermore, I have experience working in a fast-paced yet
               <span className="text-teal-500"> agile work setting</span>, and I
-              appreciate teamwork and maintaining a healthy work environment.
+              appreciate teamwork and maintaining a healthy work environment. I
+              have a good amount of experience and knowledge working with
+              <span className="text-teal-500"> MERN </span>
+              Stack and can rapidly learn new technologies. I'm searching for an
+              opportunity to work with a variety of technologies.
             </p>
           </div>
           <div className="lg:flex gap-10">
@@ -200,11 +208,17 @@ export default function Home() {
               <p className="text-gray-800 py-1">Leadership</p>
             </div>
           </div>
+          <span className="text-teal-500 new-font">&lt;/Skills&gt;</span>
         </section>
         {/* Personal Projects Section */}
         <section>
+          <span className="text-teal-500 new-font">
+            &lt;Portfolio Projects&gt;
+          </span>
           <div className="">
-            <h3 className="text-3xl py-1 dark:text-white">Portfolio Projects</h3>
+            {/* <h3 className="text-3xl py-1 dark:text-white">
+              Portfolio Projects
+            </h3> */}
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200">
               These are my projects listed below
             </p>
@@ -249,6 +263,9 @@ export default function Home() {
                 );
               })}
           </div>
+          <span className="text-teal-500 new-font">
+            &lt;/Portfolio Projects&gt;
+          </span>
         </section>
         <footer className="dark:text-white mt-8">Footer</footer>
       </main>
