@@ -87,7 +87,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 z-0" >
         <header className="py-10 mb-1 flex justify-between dark:text-white">
           <h1 className="text-xl font-burtons">Developed by Pratham Mathur</h1>
           <div className="navbar-links bg-white dark:bg-gray-900">
