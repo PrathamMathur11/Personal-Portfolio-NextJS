@@ -111,7 +111,7 @@ export default function Home() {
                 </a>
               </li>
               <li className="hover:-translate-y-2 transition-all hover:underline">
-                <a href="#" className="hover:text-teal-500">
+                <a href="#work-section" className="hover:text-teal-500">
                   Work Experience
                 </a>
               </li>
@@ -328,7 +328,7 @@ export default function Home() {
         </section>
         {/* Work Experience */}
         <section
-          id="work-experience-section"
+          id="work-section"
           data-aos="fade-right"
           data-aos-delay="250"
         >
