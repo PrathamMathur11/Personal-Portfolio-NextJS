@@ -9,9 +9,18 @@ body {
   font-family: "burtons", sans-serif;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 a {
   color: inherit;
   text-decoration: none;
+}
+
+section {
+  padding: 0 0 3rem 0;
+  overflow: hidden;
 }
 
 * {
@@ -19,7 +28,7 @@ a {
 }
 
 @font-face {
-  font-family: 'burtons';
+  font-family: "burtons";
   src: url(../public/Burtons.otf);
 }
 
@@ -34,4 +43,96 @@ a {
 .new-font {
   font-family: "La Belle Aurore", sans-serif;
   font-size: 2.5rem;
+}
+
+.navbar-links ul {
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+}
+
+.navbar-links {
+  position: absolute;
+  min-height: 80vh;
+  left: -100%;
+  width: 100%;
+  transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  /* top: -100%; */
+  opacity: 0;
+}
+
+.show-menu {
+  top: 15%;
+  left: 0;
+  opacity: 1;
+}
+.navbar-links ul {
+  gap: 40px;
+  flex-direction: column;
+  /* align-items: flex-start; */
+}
+
+.navbar-links ul li {
+  --offset: 12px;
+  text-underline-offset: var(--offset);
+}
+
+.details ul li::marker {
+  content: '✅';
+}
+
+.navbar-links ul li a {
+  font-size: 3rem;
+}
+
+/* } */
+
+@media (max-width: 500px) {
+  #work-experience-section > .details {
+    flex-direction: column !important;
+  }
+}
+
+#personal-projects-section {
+  overflow: visible;
+}
+
+.container-1 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-1 p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.container-1 p span.typed-text {
+  font-weight: normal;
+  color: #dd7732;
+}
+.container-1 p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container-1 p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
 }
