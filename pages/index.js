@@ -335,7 +335,7 @@ export default function Home() {
           <span className="text-teal-500 new-font">
             &lt;Work Experience&gt;
           </span>
-          <div className="details text-center flex justify-center items-center shadow-lg p-10 rounded-xl my-10  flex-1 dark:bg-white hover:bg-slate-100 dark:hover:bg-slate-100 cursor-pointer">
+          <div className="details text-center grid md:flex md:justify-center md:items-center shadow-lg p-10 rounded-xl my-10  flex-1 dark:bg-white hover:bg-slate-100 dark:hover:bg-slate-100 cursor-pointer">
             <div className="w-full p-0">
               <h1 className="text-4xl">Full Stack Developer Intern</h1>
               <h1 className="text-2xl">WeDigTech</h1>
