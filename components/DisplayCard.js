@@ -2,10 +2,10 @@ import React from "react";
 
 const DisplayCard = () => {
   return (
-    <div class="container-1 text-teal-500 dark:text-white">
+    <div className="container-1 text-teal-500 dark:text-white">
       <p>
-        Coding is <span class="typed-text"></span>
-        <span class="cursor">&nbsp;</span>
+        Coding is <span className="typed-text"></span>
+        <span className="cursor">&nbsp;</span>
       </p>
     </div>
   );

@@ -380,11 +380,11 @@ export default function Home() {
             {projects
               .sort(() => Math.random() - 0.5)
               .map((item, index) => {
-                let direct = "right";
+                let direct = "up-right";
                 if (index % 2 == 0) {
-                  direct = "right";
+                  direct = "up-right";
                 } else {
-                  direct = "left";
+                  direct = "in";
                 }
                 return (
                   <div
@@ -393,7 +393,7 @@ export default function Home() {
                     // style={{ boxShadow: 'rgb(0 0 0 / 25%) 0px 0px 15px' }}
                   >
                     <div
-                      data-aos={`fade-up-${direct}`}
+                      data-aos={`fade-${direct}`}
                       data-aos-delay={index * 150}
                       className="relative container"
                     >
