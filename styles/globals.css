@@ -91,7 +91,7 @@ section {
 
 /* } */
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   #work-experience-section > .details {
     flex-direction: column !important;
   }
