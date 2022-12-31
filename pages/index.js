@@ -87,7 +87,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 z-0" >
+      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 z-0">
         <header className="py-10 mb-1 flex justify-between dark:text-white">
           <h1 className="text-xl font-burtons">Developed by Pratham Mathur</h1>
           <div className="navbar-links bg-white dark:bg-gray-900">
@@ -148,7 +148,7 @@ export default function Home() {
             <li>
               <a
                 className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                href="https://drive.google.com/file/d/1sGQXU5_GxGJpI7DhncZfMVSngtbmP0Dl/view"
+                href="https://drive.google.com/file/d/1jl2504zakbiq2Bzit6oINxsTtM8BYQqr/view?usp=sharing"
               >
                 Resume
               </a>
@@ -327,11 +327,7 @@ export default function Home() {
           {/* <span className="text-teal-500 new-font">&lt;/Skills&gt;</span> */}
         </section>
         {/* Work Experience */}
-        <section
-          id="work-section"
-          data-aos="fade-right"
-          data-aos-delay="250"
-        >
+        <section id="work-section" data-aos="fade-right" data-aos-delay="250">
           <span className="text-teal-500 new-font">
             &lt;Work Experience&gt;
           </span>
