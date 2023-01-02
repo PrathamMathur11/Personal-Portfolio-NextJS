@@ -333,8 +333,8 @@ export default function Home() {
           </span>
           <div className="details text-center grid md:flex md:justify-center md:items-center shadow-lg p-10 rounded-xl my-10  flex-1 dark:bg-white hover:bg-slate-100 dark:hover:bg-slate-100 cursor-pointer">
             <div className="w-full p-0">
-              <h1 className="text-4xl">Full Stack Developer Intern</h1>
-              <h1 className="text-2xl">WeDigTech</h1>
+              <h2 className="text-4xl">Full Stack Developer Intern</h2>
+              <h2 className="text-2xl">WeDigTech</h2>
               <span className="text-xs">07 / 2022 - 08 / 2022</span>
             </div>
             <ul className="w-full">
