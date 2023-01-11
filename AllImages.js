@@ -7,6 +7,7 @@ import notifyTask from "./public/assets/notifyTask.png";
 import BezuReWeb from "./public/assets/Bezu-re-web.png";
 import youtubeUiCloneMui from "./public/assets/youtube-ui-clone-mui.png";
 import AccountingCompanyPortfolio from "./public/assets/AccountingCompanyPortfolio.png";
+import nextPortfolio from './public/assets/next-portfolio.png'
 
 const allProjectsData = [
   {
@@ -53,7 +54,11 @@ const allProjectsData = [
     title: "Notify Task Website",
     imageURL: notifyTask,
     redirectLink: "https://prathammathur11.github.io/NOTIFY_Task",
-  },
+  }, {
+    title: "My Portfolio Website",
+    imageURL: nextPortfolio,
+    redirectLink: 'https://pratham-personal-portfolio.netlify.app'
+  }
 ];
 
 export default allProjectsData;
