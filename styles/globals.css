@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  box-sizing: border-box;
+}
+
 html,
 body {
   padding: 0;
@@ -130,3 +134,5 @@ section {
   99% { background-color: transparent; }
   100%  { background-color: #ccc; }
 }
+
+/* .form-inputs */

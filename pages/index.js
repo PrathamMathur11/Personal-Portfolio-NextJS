@@ -18,6 +18,7 @@ import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import DisplayCard from "../components/DisplayCard";
+import Contact from "./ThankYou";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -170,7 +171,7 @@ export default function Home() {
             </h2>
             <h3
               className="text-2xl py-2 dark:text-white  md:text-3xl"
-              // data-rotate='[ "FrontEnd Developer.", "Student." ]'
+            // data-rotate='[ "FrontEnd Developer.", "Student." ]'
             >
               Student | FrontEnd Developer
             </h3>
@@ -187,8 +188,8 @@ export default function Home() {
             <AiFillLinkedin
               cursor="pointer"
               onClick={() =>
-                (window.location.href =
-                  "https://www.linkedin.com/in/pratham-mathur-5b99681ab/")
+              (window.location.href =
+                "https://www.linkedin.com/in/pratham-mathur-5b99681ab/")
               }
               className="hover:fill-blue-500"
             />
@@ -202,8 +203,8 @@ export default function Home() {
             <AiFillInstagram
               cursor="pointer"
               onClick={() =>
-                (window.location.href =
-                  "https://www.instagram.com/pratham_mathur11/")
+              (window.location.href =
+                "https://www.instagram.com/pratham_mathur11/")
               }
               // fill='#E4405F'
               className="hover:fill-pink-600"
@@ -386,7 +387,7 @@ export default function Home() {
                   <div
                     className="basis-1/3 flex-1 rounded-lg hover:scale-105 transition-all"
                     key={index}
-                    // style={{ boxShadow: 'rgb(0 0 0 / 25%) 0px 0px 15px' }}
+                  // style={{ boxShadow: 'rgb(0 0 0 / 25%) 0px 0px 15px' }}
                   >
                     <div
                       data-aos={`fade-${direct}`}
@@ -415,6 +416,45 @@ export default function Home() {
           {/* <span className="text-teal-500 new-font">
             &lt;/Portfolio Projects&gt;
           </span> */}
+        </section>
+        <section>
+          {/* <Contact /> */}
+          <div className='wrapper text-3xl pt-36 px-0 pb-20 text-center'>
+            <h2 className='dark:text-white mb-10'>Contact Us</h2>
+            <div className="container">
+              <div className="contact-form m-auto" style={{ maxWidth: '50rem' }} >
+                <form action="https://formsubmit.co/prathammathur2002@gmail.com" className='form-inputs flex flex-col gap-10' method='POST'>
+                  <input
+                    className="dark:text-white bg-transparent border pl-2 pt-1"
+                    type="text"
+                    name="username"
+                    placeholder='username'
+                    autoComplete='off'
+                    required
+                  />
+                  <input
+                    className="dark:text-white bg-transparent border pl-2 pt-1"
+                    type="email"
+                    name="Email"
+                    placeholder='Email'
+                    autoComplete='off'
+                    required
+                  />
+                  <input type="hidden" name="_next" value="https://pratham-personal-portfolio.netlify.app/ThankYou"></input>
+                  <textarea
+                    className="dark:text-white bg-transparent border pl-2 pt-1"
+                    name="message"
+                    cols="30"
+                    rows="6"
+                    placeholder='Write your message here'
+                    autoComplete='off'
+                    required
+                  ></textarea>
+                  <input type="submit" className="text-white cursor-pointer hover:scale-95 transition-all" style={{ background: "#14b8a6" }} value="send" />
+                </form>
+              </div>
+            </div>
+          </div>
         </section>
         {/* <footer className="dark:text-white mt-8">Footer</footer> */}
       </main>
