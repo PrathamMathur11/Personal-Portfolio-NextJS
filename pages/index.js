@@ -18,7 +18,6 @@ import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import DisplayCard from "../components/DisplayCard";
-import Contact from "./ThankYou";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -423,7 +422,7 @@ export default function Home() {
             <h2 className='dark:text-white mb-10'>Contact Me</h2>
             <div className="container">
               <div className="contact-form m-auto" style={{ maxWidth: '50rem' }} >
-                <form action="https://formsubmit.co/prathammathur2002@gmail.com" className='form-inputs flex flex-col gap-10' method='POST'>
+                <form action="https://formspree.io/f/mgebvaqr" className='form-inputs flex flex-col gap-10' method='POST'>
                   <input
                     className="dark:text-white bg-transparent border pl-2 pt-1"
                     type="text"
@@ -440,7 +439,6 @@ export default function Home() {
                     autoComplete='off'
                     required
                   />
-                  <input type="hidden" name="_next" value="https://pratham-personal-portfolio.netlify.app/ThankYou"></input>
                   <textarea
                     className="dark:text-white bg-transparent border pl-2 pt-1"
                     name="message"
