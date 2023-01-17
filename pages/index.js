@@ -420,7 +420,7 @@ export default function Home() {
         <section>
           {/* <Contact /> */}
           <div className='wrapper text-3xl pt-36 px-0 pb-20 text-center'>
-            <h2 className='dark:text-white mb-10'>Contact Us</h2>
+            <h2 className='dark:text-white mb-10'>Contact Me</h2>
             <div className="container">
               <div className="contact-form m-auto" style={{ maxWidth: '50rem' }} >
                 <form action="https://formsubmit.co/prathammathur2002@gmail.com" className='form-inputs flex flex-col gap-10' method='POST'>
