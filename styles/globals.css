@@ -57,6 +57,7 @@ section {
 
 .navbar-links {
   position: absolute;
+  top: 6rem;
   min-height: 80vh;
   left: -100%;
   width: 100%;
