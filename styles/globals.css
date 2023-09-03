@@ -90,7 +90,7 @@ nav > h1.title {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5%;
+  padding: 2% 10% 10% 10%;
   /* top: 80%; */
   /* top: -100%; */
   opacity: 0;
