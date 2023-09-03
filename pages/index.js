@@ -121,17 +121,17 @@ export default function Home() {
                   Contact
                 </a>
               </li>
+              <li className="hover:scale-110 transition-all">
+                <a
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-full"
+                  href="https://drive.google.com/file/d/1AxOW_xXVet1L9jwtn5--AUloO0ffQvq5/view?usp=sharing"
+                >
+                  Resume
+                </a>
+              </li>
             </ul>
           </div>
           <ul className="navigation flex items-center justify-between gap-8 h-full">
-            <li className="hover:scale-110 transition-all">
-              <a
-                className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-full"
-                href="https://drive.google.com/file/d/1AxOW_xXVet1L9jwtn5--AUloO0ffQvq5/view?usp=sharing"
-              >
-                Resume
-              </a>
-            </li>
             <li>
               <BsFillMoonStarsFill
                 onClick={() => setDarkMode(!darkMode)}
