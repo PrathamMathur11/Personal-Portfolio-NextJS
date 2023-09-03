@@ -68,7 +68,8 @@ nav > h1.title {
 
 .navigation > li {
   height: 100%;
-  transform: translate(0%, 30%);
+  display: flex;
+  align-items: center;
 }
 
 .navbar-links ul {
@@ -102,7 +103,7 @@ nav > h1.title {
   opacity: 1;
 }
 .navbar-links ul {
-  gap: 40px;
+  gap: 20px;
   flex-direction: column;
   /* align-items: flex-start; */
 }
