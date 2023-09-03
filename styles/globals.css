@@ -14,7 +14,7 @@ body {
 }
 
 body {
-  cursor: url(/public/assets/OIP.jpg), auto;
+  cursor: url("/public/assets/OIP.jpg"), auto;
 }
 
 ::-webkit-scrollbar {
