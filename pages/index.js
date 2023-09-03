@@ -88,9 +88,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header id="header-id" className="sticky top-0 py-10 dark:text-white  bg-white dark:bg-gray-900">
+      <header id="home" className="sticky top-0 py-10 dark:text-white  bg-white dark:bg-gray-900">
         <nav className="flex justify-around items-center mb-1 max-w-7xl mr-auto ml-auto pl-5 pr-5">
-          <h1 className="text-xl font-burtons">Code by Pratham</h1>
+          <a href="#home" className="text-xl font-burtons title cursor-pointer">Code by Pratham</a>
           <div className="navbar-links bg-white dark:bg-gray-900">
             <ul className="flex items-center text-center">
               <li className="hover:-translate-y-2 transition-all hover:underline">
@@ -123,27 +123,14 @@ export default function Home() {
               </li>
             </ul>
           </div>
-          <ul className="flex items-center">
-            <li>
-              {menu ? (
-                <BiMenu
-                  onClick={() => {
-                    setMenu(!menu);
-                    const menuList = document.querySelector(".navbar-links");
-                    menuList.classList.add("show-menu");
-                  }}
-                  className="text-3xl mr-8 cursor-pointer"
-                />
-              ) : (
-                <AiOutlineClose
-                  onClick={() => {
-                    setMenu(!menu);
-                    const menuList = document.querySelector(".navbar-links");
-                    menuList.classList.remove("show-menu");
-                  }}
-                  className="text-3xl mr-8 cursor-pointer"
-                />
-              )}
+          <ul className="navigation flex items-center justify-between gap-8 h-full">
+            <li className="hover:scale-110 transition-all">
+              <a
+                className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-full"
+                href="https://drive.google.com/file/d/1AxOW_xXVet1L9jwtn5--AUloO0ffQvq5/view?usp=sharing"
+              >
+                Resume
+              </a>
             </li>
             <li>
               <BsFillMoonStarsFill
@@ -152,12 +139,25 @@ export default function Home() {
               />
             </li>
             <li>
-              <a
-                className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                href="https://drive.google.com/file/d/1jl2504zakbiq2Bzit6oINxsTtM8BYQqr/view?usp=sharing"
-              >
-                Resume
-              </a>
+              {menu ? (
+                <BiMenu
+                  onClick={() => {
+                    setMenu(!menu);
+                    const menuList = document.querySelector(".navbar-links");
+                    menuList.classList.add("show-menu");
+                  }}
+                  className="text-3xl cursor-pointer"
+                />
+              ) : (
+                <AiOutlineClose
+                  onClick={() => {
+                    setMenu(!menu);
+                    const menuList = document.querySelector(".navbar-links");
+                    menuList.classList.remove("show-menu");
+                  }}
+                  className="text-3xl cursor-pointer"
+                />
+              )}
             </li>
           </ul>
         </nav>
