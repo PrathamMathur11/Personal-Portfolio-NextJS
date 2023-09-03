@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -13,8 +13,16 @@ body {
   font-family: "burtons", sans-serif;
 }
 
+body {
+  cursor: none;
+}
+
 ::-webkit-scrollbar {
   display: none;
+}
+
+header#header-id {
+  z-index: 10000;
 }
 
 a {
@@ -65,6 +73,7 @@ section {
   align-items: center;
   justify-content: center;
   padding: 5%;
+  top: 80%;
   /* top: -100%; */
   opacity: 0;
   z-index: 100;
@@ -87,13 +96,12 @@ section {
 }
 
 .details ul li::marker {
-  content: '✅';
+  content: "✅";
 }
 
 .navbar-links ul li a {
   font-size: 2.5rem;
 }
-
 
 #personal-projects-section {
   overflow: visible;
@@ -128,11 +136,21 @@ section {
   animation: none;
 }
 @keyframes blink {
-  0%  { background-color: #ccc; }
-  49% { background-color: #ccc; }
-  50% { background-color: transparent; }
-  99% { background-color: transparent; }
-  100%  { background-color: #ccc; }
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
 }
 
 /* .form-inputs */

@@ -27,7 +27,8 @@ export default function Home() {
   // const typedTextSpan = document.querySelector(".typed-text");
   // const cursorSpan = document.querySelector(".cursor");
 
-  const textArray = ["hard", "fun", "a journey", "LIFE"];
+  // const textArray = ["hard", "fun", "a journey", "LIFE"];
+  const textArray = ["Fun Skill"];
   const typingDelay = 200;
   const erasingDelay = 100;
   const newTextDelay = 2000; // Delay between current and next text
@@ -87,11 +88,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 z-10">
-        <header className="sticky top-0 py-10 mb-1 flex justify-between dark:text-white  bg-white dark:bg-gray-900">
-          <h1 className="text-xl font-burtons">Developed by Pratham Mathur</h1>
+      <header id="header-id" className="sticky top-0 py-10 dark:text-white  bg-white dark:bg-gray-900">
+        <nav className="flex justify-around items-center mb-1 max-w-7xl mr-auto ml-auto pl-5 pr-5">
+          <h1 className="text-xl font-burtons">Code by Pratham</h1>
           <div className="navbar-links bg-white dark:bg-gray-900">
-            <ul className="flex items-center">
+            <ul className="flex items-center text-center">
               <li className="hover:-translate-y-2 transition-all hover:underline">
                 <a href="#info-section" className="hover:text-teal-500">
                   Info
@@ -103,16 +104,21 @@ export default function Home() {
                 </a>
               </li>
               <li className="hover:-translate-y-2 transition-all hover:underline">
+                <a href="#work-section" className="hover:text-teal-500">
+                  Work Experience
+                </a>
+              </li>
+              <li className="hover:-translate-y-2 transition-all hover:underline">
                 <a
                   href="#personal-projects-section"
                   className="hover:text-teal-500"
                 >
-                  Portfolio Projects
+                  Projects
                 </a>
               </li>
               <li className="hover:-translate-y-2 transition-all hover:underline">
-                <a href="#work-section" className="hover:text-teal-500">
-                  Work Experience
+                <a href="#contact" className="hover:text-teal-500">
+                  Contact
                 </a>
               </li>
             </ul>
@@ -154,7 +160,10 @@ export default function Home() {
               </a>
             </li>
           </ul>
-        </header>
+        </nav>
+      </header>
+
+      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 z-10">
         {/* Home Section */}
         <section
           className="min-h-screen"
@@ -362,7 +371,7 @@ export default function Home() {
         {/* Personal Projects Section */}
         <section id="personal-projects-section">
           <span className="text-teal-500 new-font">
-            &lt;Portfolio Projects&gt;
+            &lt;Projects&gt;
           </span>
           <div className="">
             {/* <h3 className="text-3xl py-1 dark:text-white">
@@ -416,7 +425,7 @@ export default function Home() {
             &lt;/Portfolio Projects&gt;
           </span> */}
         </section>
-        <section>
+        <section id="contact">
           {/* <Contact /> */}
           <div className='wrapper text-3xl pt-36 px-0 pb-20 text-center'>
             <h2 className='dark:text-white mb-10'>Contact Me</h2>
