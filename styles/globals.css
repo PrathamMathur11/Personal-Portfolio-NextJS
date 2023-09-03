@@ -81,16 +81,16 @@ nav > h1.title {
 .navbar-links {
   position: absolute;
   min-height: 80vh;
-  height: 90vh;
+  height: 100vh;
   /* left: -100%; */
-  top: -540%;
+  top: -900%;
   left: 0%;
   width: 100%;
   transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2% 10% 10% 10%;
+  padding: 2% 10% 2% 10%;
   /* top: 80%; */
   /* top: -100%; */
   opacity: 0;
@@ -98,7 +98,7 @@ nav > h1.title {
 }
 
 .show-menu {
-  top: 80%;
+  top: 0%;
   left: 0;
   opacity: 1;
 }

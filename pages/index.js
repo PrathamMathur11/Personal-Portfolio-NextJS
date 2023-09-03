@@ -88,42 +88,89 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header id="home" className="sticky top-0 py-10 dark:text-white  bg-white dark:bg-gray-900">
+      <header id="home" className="sticky top-0 pt-6 pb-2 dark:text-white  bg-white dark:bg-gray-900">
         <nav className="flex justify-around items-center mb-1 max-w-7xl mr-auto ml-auto pl-5 pr-5">
           <a href="#home" className="text-xl font-burtons title cursor-pointer">Code by Pratham</a>
           <div className="navbar-links bg-white dark:bg-gray-900">
+            <div className="absolute top-6 right-6">
+              {menu ? (
+                <BiMenu
+                  onClick={() => {
+                    setMenu(!menu);
+                    const menuList = document.querySelector(".navbar-links");
+                    menuList.classList.add("show-menu");
+                  }}
+                  className="text-4xl cursor-pointer"
+                />
+              ) : (
+                <AiOutlineClose
+                  onClick={() => {
+                    setMenu(!menu);
+                    const menuList = document.querySelector(".navbar-links");
+                    menuList.classList.remove("show-menu");
+                  }}
+                  className="text-4xl cursor-pointer"
+                />
+              )}
+            </div>
             <ul className="flex items-center text-center">
               <li className="hover:-translate-y-2 transition-all hover:underline">
-                <a href="#info-section" className="hover:text-teal-500">
+                <a href="#info-section" onClick={() => {
+                  setMenu(!menu);
+                  const menuList = document.querySelector(".navbar-links");
+                  menuList.classList.remove("show-menu");
+                }} className="hover:text-teal-500">
                   Info
                 </a>
               </li>
               <li className="hover:-translate-y-2 transition-all hover:underline">
-                <a href="#skills-section" className="hover:text-teal-500">
+                <a href="#skills-section" onClick={() => {
+                  setMenu(!menu);
+                  const menuList = document.querySelector(".navbar-links");
+                  menuList.classList.remove("show-menu");
+                }} className="hover:text-teal-500">
                   Skills
                 </a>
               </li>
               <li className="hover:-translate-y-2 transition-all hover:underline">
-                <a href="#work-section" className="hover:text-teal-500">
+                <a href="#work-section" onClick={() => {
+                  setMenu(!menu);
+                  const menuList = document.querySelector(".navbar-links");
+                  menuList.classList.remove("show-menu");
+                }} className="hover:text-teal-500">
                   Work Experience
                 </a>
               </li>
               <li className="hover:-translate-y-2 transition-all hover:underline">
                 <a
                   href="#personal-projects-section"
+                  onClick={() => {
+                    setMenu(!menu);
+                    const menuList = document.querySelector(".navbar-links");
+                    menuList.classList.remove("show-menu");
+                  }}
                   className="hover:text-teal-500"
                 >
                   Projects
                 </a>
               </li>
               <li className="hover:-translate-y-2 transition-all hover:underline">
-                <a href="#contact" className="hover:text-teal-500">
+                <a href="#contact" onClick={() => {
+                  setMenu(!menu);
+                  const menuList = document.querySelector(".navbar-links");
+                  menuList.classList.remove("show-menu");
+                }} className="hover:text-teal-500">
                   Contact
                 </a>
               </li>
               <li className="hover:scale-110 transition-all">
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-full"
+                  onClick={() => {
+                    setMenu(!menu);
+                    const menuList = document.querySelector(".navbar-links");
+                    menuList.classList.remove("show-menu");
+                  }}
                   href="https://drive.google.com/file/d/1AxOW_xXVet1L9jwtn5--AUloO0ffQvq5/view?usp=sharing"
                 >
                   Resume
