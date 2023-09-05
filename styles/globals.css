@@ -143,16 +143,25 @@ nav > h1.title {
   font-weight: normal;
   color: #dd7732;
 }
-.container-1 p span.cursor {
+
+
+
+/* .container-1 p span.cursor {
   display: inline-block;
   background-color: #ccc;
   margin-left: 0.1rem;
   width: 3px;
   animation: blink 1s infinite;
-}
-.container-1 p span.cursor.typing {
+} */
+/* .container-1 p span.cursor.typing {
   animation: none;
+} */
+
+.projects-wrapper {
+  column-gap: 2.5rem;
+  row-gap: 4rem;
 }
+
 @keyframes blink {
   0% {
     background-color: #ccc;
