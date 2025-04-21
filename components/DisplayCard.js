@@ -7,7 +7,7 @@ const DisplayCard = () => {
 
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["HARD", "FUN", "A JOURNEY", "LIFE"],
+      strings: ["Hard", "Fun", "A Journey", "Life"],
       typeSpeed: 200,
       loop: true
     });

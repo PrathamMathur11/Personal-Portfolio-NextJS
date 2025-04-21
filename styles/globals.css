@@ -81,7 +81,7 @@ nav > h1.title {
 .navbar-links {
   position: absolute;
   min-height: 80vh;
-  height: 100vh;
+  /* height: 100vh; */
   /* left: -100%; */
   top: -1000%;
   left: 0%;
@@ -101,6 +101,7 @@ nav > h1.title {
   top: 0%;
   left: 0;
   opacity: 1;
+  height: 100vh;
 }
 .navbar-links ul {
   gap: 20px;
@@ -126,7 +127,7 @@ nav > h1.title {
 }
 
 .container-1 {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
