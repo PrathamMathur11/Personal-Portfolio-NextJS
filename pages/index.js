@@ -110,7 +110,21 @@ export default function Home() {
         </nav>
 
         {/* Mobile Navigation Menu */}
-        <div className={`mobile-menu fixed inset-0 z-40 bg-white dark:bg-gray-900 transition-all duration-300 ${menuOpen ? 'opacity-100 visible h-100vh' : 'opacity-0 invisible'} md:hidden`}>
+        <div
+          className={`mobile-menu fixed inset-0 z-40 bg-white dark:bg-gray-900 transition-all duration-300 ${menuOpen ? 'clip-path-open opacity-100 visible h-screen' : 'clip-path-closed opacity-0 invisible h-0'}`}
+          style={{
+            clipPath: menuOpen
+              ? 'circle(150% at 50% 50%)'
+              : 'circle(0% at 50% 50%)',
+          }}
+        >
+          <button
+            onClick={toggleMenu}
+            className="absolute top-[1.25rem] right-[1.5rem] p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all"
+            aria-label="Close menu"
+          >
+            <AiOutlineClose className="text-2xl dark:text-white" />
+          </button>
           <div className="flex flex-col items-center justify-center h-full space-y-8 text-xl">
             <a href="#info-section" onClick={toggleMenu} className="hover:text-teal-500 dark:text-white">About</a>
             <a href="#skills-section" onClick={toggleMenu} className="hover:text-teal-500 dark:text-white">Skills</a>
