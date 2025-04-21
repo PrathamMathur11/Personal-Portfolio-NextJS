@@ -76,8 +76,9 @@ export default function Home() {
             <a href="#personal-projects-section" className="hover:text-teal-500 dark:text-white transition-all">Projects</a>
             <a href="#contact" className="hover:text-teal-500 dark:text-white transition-all">Contact</a>
             <a
-              href="https://drive.google.com/file/d/1XRm8B4W3DYDOZLRzwP76rVL3gu7tJe-5/view?usp=drive_link"
-              target="_blank"
+              onClick={() => {
+                window.open("https://drive.google.com/file/d/1XRm8B4W3DYDOZLRzwP76rVL3gu7tJe-5/view?usp=drive_link", "_blank");
+              }}
               className="flex items-center gap-2 bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white px-4 py-2 rounded-lg transition-all"
             >
               Resume <HiDownload />
@@ -892,18 +893,18 @@ export default function Home() {
                           {item.description || "A creative project showcasing modern design and technical skills."}
                         </p>
 
-                        <a
-                          // onClick={() => window.location.href = item.redirectLink}
-                          href={item.redirectLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                        <button
+                          onClick={() => window.open(item.redirectLink, "_blank")}
+                          // href={item.redirectLink}
+                          // target="_blank"
+                          // rel="noopener noreferrer"
                           className="inline-flex items-center gap-2 text-teal-600 dark:text-teal-400 font-medium hover:text-teal-800 dark:hover:text-teal-300 transition-colors"
                         >
                           View Project
                           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                           </svg>
-                        </a>
+                        </button>
                       </div>
                     </div>
                   );
@@ -915,6 +916,7 @@ export default function Home() {
         {/* Contact Section */}
         <section id="contact" className="py-20" data-aos="fade-up">
           <div className="max-w-7xl mx-auto px-6 md:px-10">
+
             <div className="mb-16 text-center">
               <span className="inline-block px-3 py-1 rounded-full text-sm font-medium bg-teal-100 text-teal-800 dark:bg-teal-900 dark:text-teal-200 mb-4">
                 Get in Touch
