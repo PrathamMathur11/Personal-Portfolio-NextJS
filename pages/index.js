@@ -53,8 +53,47 @@ export default function Home() {
     menuList?.classList.toggle("show-menu");
   };
 
+  // useEffect(() => {
+  //   const cursor = document.getElementById("custom-cursor");
+
+  //   const handleMouseMove = (e) => {
+  //     cursor.style.left = `${e.clientX}px`;
+  //     cursor.style.top = `${e.clientY}px`;
+  //   };
+
+  //   const handleMouseEnter = () => {
+  //     cursor.classList.add("cursor-hover");
+  //   };
+
+  //   const handleMouseLeave = () => {
+  //     cursor.classList.remove("cursor-hover");
+  //   };
+
+  //   document.addEventListener("mousemove", handleMouseMove);
+  //   document.querySelectorAll("a, button").forEach((el) => {
+  //     el.addEventListener("mouseenter", handleMouseEnter);
+  //     el.addEventListener("mouseleave", handleMouseLeave);
+  //   });
+
+  //   return () => {
+  //     document.removeEventListener("mousemove", handleMouseMove);
+  //     document.querySelectorAll("a, button").forEach((el) => {
+  //       el.removeEventListener("mouseenter", handleMouseEnter);
+  //       el.removeEventListener("mouseleave", handleMouseLeave);
+  //     });
+  //   };
+  // }, []);
+
   return (
     <div className={darkMode ? "dark bg-gray-900" : "bg-white"}>
+      {/* <div
+        id="custom-cursor"
+        className="fixed w-6 h-6 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full pointer-events-none z-50 transition-transform duration-300 transform -translate-x-1/2 -translate-y-1/2 shadow-lg"
+        style={{
+          mixBlendMode: "difference",
+          border: "2px solid white",
+        }}
+      ></div> */}
       <Head>
         <title>Pratham Mathur | Software Engineer</title>
         <meta name="description" content="Pratham Mathur - Software Engineer Portfolio" />
@@ -234,7 +273,7 @@ export default function Home() {
         </section>
 
         {/* Display Card Section */}
-        <section id="display-section" className="py-20 bg-gray-50 dark:bg-gray-800">
+        <section id="display-section" className="py-20 bg-gray-50 dark:bg-gray-800 h-[25rem] grid place-content-center" data-aos="fade-up">
           <div className="max-w-7xl mx-auto px-6 md:px-10">
             <DisplayCard />
           </div>
