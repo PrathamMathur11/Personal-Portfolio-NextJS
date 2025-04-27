@@ -655,7 +655,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="achievements-section" className="py-24 max-w-7xl mx-auto px-6 md:px-10">
+        <section id="achievements-section" className="py-24 max-w-7xl mx-auto px-6 md:px-10" data-aos="fade-up">
           <div className="mb-16">
             <div className="flex flex-col items-center">
               <span className="px-4 py-1.5 rounded-full text-sm font-medium bg-teal-100 text-teal-800 dark:bg-teal-900 dark:text-teal-200 mb-5">
@@ -670,7 +670,7 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="100">
               <div className="flex items-start gap-4 mb-4">
                 <span className="w-10 h-10 rounded-lg bg-teal-500 flex items-center justify-center flex-shrink-0">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -683,7 +683,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="200">
               <div className="flex items-start gap-4 mb-4">
                 <span className="w-10 h-10 rounded-lg bg-teal-500 flex items-center justify-center flex-shrink-0">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -696,7 +696,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="300">
               <div className="flex items-start gap-4 mb-4">
                 <span className="w-10 h-10 rounded-lg bg-teal-500 flex items-center justify-center flex-shrink-0">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -708,8 +708,8 @@ export default function Home() {
                 </p>
               </div>
             </div>
-
-            <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+ 
+            <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="400">
               <div className="flex items-start gap-4 mb-4">
                 <span className="w-10 h-10 rounded-lg bg-teal-500 flex items-center justify-center flex-shrink-0">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -724,7 +724,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="certificates-section" className="py-24 px-6 md:px-10 bg-gray-50 dark:bg-gray-800">
+        <section id="certificates-section" className="py-24 px-6 md:px-10 bg-gray-50 dark:bg-gray-800" data-aos="fade-up">
           <div className="mb-16 max-w-7xl mx-auto">
             <div className="flex flex-col items-center">
               <span className="px-4 py-1.5 rounded-full text-sm font-medium bg-teal-100 text-teal-800 dark:bg-teal-900 dark:text-teal-200 mb-5">
@@ -739,7 +739,7 @@ export default function Home() {
           </div>
 
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-aos="fade-up" data-aos-delay="100" >
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-teal-500 rounded-lg flex items-center justify-center">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -753,7 +753,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-teal-500 rounded-lg flex items-center justify-center">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -767,7 +767,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-aos="fade-up" data-aos-delay="300">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-teal-500 rounded-lg flex items-center justify-center">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -781,7 +781,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-aos="fade-up" data-aos-delay="400">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-teal-500 rounded-lg flex items-center justify-center">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -795,7 +795,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-aos="fade-up" data-aos-delay="500">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-teal-500 rounded-lg flex items-center justify-center">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -809,7 +809,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-aos="fade-up" data-aos-delay="600">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-teal-500 rounded-lg flex items-center justify-center">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -825,7 +825,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="competitions-section" className="py-24 max-w-7xl mx-auto px-6 md:px-10">
+        <section id="competitions-section" className="py-24 max-w-7xl mx-auto px-6 md:px-10" data-aos="fade-up">
           <div className="mb-16">
             <div className="flex flex-col items-center">
               <span className="px-4 py-1.5 rounded-full text-sm font-medium bg-teal-100 text-teal-800 dark:bg-teal-900 dark:text-teal-200 mb-5">
